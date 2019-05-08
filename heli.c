@@ -2,7 +2,7 @@
 #include<GL/glut.h> 
 #include<time.h> 
 //#include<dos.h>
- #include<stdio.h>
+#include<stdio.h>
  //#include<conio.h>
  //#include<windows.h>
 float bspd=0.02; // block dx value
