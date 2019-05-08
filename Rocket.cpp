@@ -1,16 +1,8 @@
-
- 
-//#include<windows.h>
-#include<OpenGL/gl.h>
-#include<OpenGL/glu.h>
-#include<GLUT/glut.h>
-#include <stdbool.h>
-#include<ctype.h>
-//#include<GL/glut.
+#include <windows.h>
 #include<string.h>
 #include<stdarg.h>
 #include<stdio.h>
-//#include<glut.h>
+#include<glut.h>
 static double x=0.0,x1=0.0,y1=0.1,z1=0.0,a1=0,y2=0,z2=0;
 static double move=-60;
 static bool seperate=false;
@@ -425,7 +417,7 @@ void menu(int id)
 	case 2:glutIdleFunc(p);
 		break;
 	
-	case 5: 
+	case 5:exit(0);
 		break;
 	
 	}
@@ -445,7 +437,7 @@ void mykey(unsigned char key,int x,int y)
 
 	if(key=='q'||key=='Q')
 	{
-		;
+		exit(0);
 	}
 
 	
@@ -475,3 +467,6 @@ int main(int argc, char *argv[])
     glutMainLoop();
 	return 0; 
 }
+
+ 
+
